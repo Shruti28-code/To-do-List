@@ -1,0 +1,153 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  background: url("https://via.placeholder.com/1920x1080.png?text=Background")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* Main Container Styling */
+#main {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1,
+h3 {
+  text-align: center;
+  color: #141516;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Form Container */
+#conatiner {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#conatiner input[type="text"],
+#conatiner input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+#conatiner input[type="date"] {
+  text-transform: uppercase;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Task Summary */
+/* Task Summary Table Styling */
+#taskSummary {
+  width: 100%;
+  border-collapse: none;
+  margin-top: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#taskSummary thead {
+  background: #3498db;
+  color: #fff;
+}
+
+#taskSummary th,
+#taskSummary td {
+  text-align: center;
+  padding: 12px 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+#taskSummary tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+#taskSummary tbody tr:hover {
+  background: #e8f5ff;
+}
+
+#taskSummary th {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#taskSummary td {
+  border-bottom: 1px solid #ddd;
+}
+
+#taskSummary input[type="checkbox"] {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Responsive Table Design */
+@media (max-width: 600px) {
+  #taskSummary {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  #taskSummary th,
+  #taskSummary td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #taskSummary th {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #main {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  #taskSummary table th,
+  #taskSummary table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

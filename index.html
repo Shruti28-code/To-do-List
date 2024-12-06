@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="conatiner">
+        <h1>To do List</h1>
+        Task :<input type="text" id="task" required />
+        <br />
+        Deadline of the Task :<input
+          type="date"
+          id="d&t"
+          placeholder="DD/MM/YYYY"
+        />
+        <br />
+        Any Note : <input type="text" id="des" />
+        <br />
+        <button id="btn" type="submit" onclick="add()">Add task</button>
+      </div>
+      <br />
+      <div>
+        <h3>Task Summary</h3>
+        <table id="taskSummary">
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Deadline</th>
+              <th>Note</th>
+             
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
