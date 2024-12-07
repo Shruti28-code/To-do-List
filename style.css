@@ -112,12 +112,7 @@ button:hover {
 
 /* Responsive Table Design */
 @media (max-width: 600px) {
-  #taskSummary {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
+  
   #taskSummary th,
   #taskSummary td {
     font-size: 12px;
